@@ -1,0 +1,48 @@
+@mixin flex-row () {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-column () {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin font-Arial () {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+
+
+@mixin media-laptop-large {
+    @media (max-width: $content-width-large) {@content;}
+}
+
+@mixin media-laptop {
+    @media (max-width: $content-width) {@content;}
+}
+
+@mixin media-laptop-small {
+    @media (max-width: $content-width-small) {@content;}
+}
+
+@mixin media-tablet {
+    @media (max-width: $tablet-width) {@content;}
+}
+
+@mixin media-tablet-small {
+    @media (max-width: $tablet-width-small) {@content;}
+}
+
+@mixin media-mobile-menu {
+    @media (max-width: $mobile-menu-width) {@content;}
+}
+
+@mixin media-mobile {
+    @media (max-width: $mobile-width) {@content;}
+}
+
+
+
+
